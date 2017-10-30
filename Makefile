@@ -9,7 +9,7 @@ pull:
 	docker pull $(IMAGE_NAME)
 
 shell:
-	docker run --rm -it --user $(id -u):$(id -g) -v $(PWD):/srv/app:Z --entrypoint=sh $(IMAGE_NAME)
+	docker run --rm -it --user $(shell id -u):$(shell id -g) -v $(HOME)/.ssh:/home/cookiecutter/.ssh:Z -v $(PWD):/srv/app:Z --entrypoint=sh $(IMAGE_NAME)
 
 tag:
 	-git tag -d $(TAG)
