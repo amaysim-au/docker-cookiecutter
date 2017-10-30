@@ -1,5 +1,4 @@
 FROM alpine:3.6
-MAINTAINER Ivan Pedrazas <ipedrazas@gmail.com>
 ENV LC_ALL C.UTF-8
 ENV COOKIECUTTER_VERSION 1.5.1
 
