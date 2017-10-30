@@ -1,5 +1,5 @@
 COOKIECUTTER_VERSION = 1.5.1
-IMAGE_NAME ?= cookiecutter/cookiecutter:$(COOKIECUTTER_VERSION)
+IMAGE_NAME ?= amaysim/cookiecutter:$(COOKIECUTTER_VERSION)
 TAG = $(SERVERLESS_VERSION)
 
 build:
