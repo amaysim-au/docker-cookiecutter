@@ -14,7 +14,7 @@ RUN apk add --no-cache \
   apk del g++ py-pip  python-dev && \
   adduser -Dg '' cookiecutter && \
   mkdir -p /.cookiecutter_replay /.cookiecutters && \
-  chown cookiecutter:cookiecutter -R /.cookiecutter_replay /.cookiecutters
+  chown cookiecutter:cookiecutter -R /.cookiecutter_replay /.cookiecutters /srv/app
 
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub && \
   wget -q https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk && \
