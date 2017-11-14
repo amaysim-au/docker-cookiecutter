@@ -13,7 +13,7 @@ RUN apk add --no-cache \
   pip install cookiecutter==$COOKIECUTTER_VERSION && \
   apk del g++ py-pip  python-dev && \
   adduser -Dg '' cookiecutter && \
-  mkdir -p /.cookiecutter_replay /.cookiecutters && \
+  mkdir -p /.cookiecutter_replay /.cookiecutters /srv/app && \
   chown cookiecutter:cookiecutter -R /.cookiecutter_replay /.cookiecutters /srv/app
 
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub && \
